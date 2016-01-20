@@ -39,6 +39,7 @@ default['python']['checksum'] = '7f49c0a6705ad89d925181e27d0aaa025ee4731ce0de647
 default['python']['configure_options'] = %W{--prefix=#{node['python']['prefix_dir']}}
 default['python']['make_options'] = %W{install}
 
+default['python']['pip']['version'] = '7.1.2'
 default['python']['pip_location'] = "#{node['python']['prefix_dir']}/bin/pip"
 default['python']['virtualenv_location'] = "#{node['python']['prefix_dir']}/bin/virtualenv"
 default['python']['setuptools_version'] = nil # defaults to latest
